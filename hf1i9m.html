@@ -1,0 +1,52 @@
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script type="text/javascript" src="https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/J0109.js"></script> 		<script type="text/javascript" src="../reading/functions.js"></script> 		<link rel="stylesheet" href="../reading/layout.css"> 		<script> 			const d10 = [ ["85"], 							]; 		</script> 	</head> 	<body onload='f1();' onkeydown='f4()' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> 			</div> 			<div id = "navigationBox"> 			</div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>점수에 따라 다른 메시지를 출력하는 문제입니다 이를 해결하는 다음 프로그램의 실행상태를 확인하세요 참고로, 90점이상이면 와! 끝내주게 잘 했다를 출력하고, 
+80점이상이면 끝내주게 잘 했다를 출력하고, 
+70점이상이면 잘 했다를 출력하고, 
+나머지는 했다를 출력한다.</pre> 				<pre class='selectable'>0점 ~ 100점 사이의 점수를 입력하세요: <b><font color='red'>85</font></b>
+끝내주게 잘 했다
+</pre><br> 	   				<h4>프로그램 코드</h4> 				<pre>	import java.lang.System;
+	import java.util.Scanner;
+	
+	public class Main 
+	{
+1		public static void main( String[] args ) 
+		{
+			Scanner scan = new Scanner( System.in );
+2			int score = 0;
+	
+3			System.out.println( "0점 ~ 100점 사이의 점수를 입력하세요: ");
+4			score = scan.nextInt(); 
+	
+5			switch ( score / 10 )							
+			{
+6				case 10: case 9: 							
+7					System.out.println( "와! ");
+8				case 8: 									
+9					System.out.println( "끝내주게 ");
+10				case 7:										
+11					System.out.println( "잘 ");
+12				default:									
+13					System.out.println( "했다");
+			}
+	
+14			return;
+		}
+	}
+	</pre> 				<br>
+<h4>프로그램의 실행순서(11개) 및 실행상태</h4>
+<pre style='margin:0;padding:0;'>1		public static void main( String[] args ) </pre> <table style="font-size:10pt; background:Silver; border:0px; border-spacing:0px; margin:0px;padding:0;"> <tbody id="value_table"> <tr></tr> <tr> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; ">main() 함수</td></tr> <tr></tr> <tr> <td style = "margin:0px;padding:0;text-align:right; border:5px solid SkyBlue; background:SkyBlue;">scan</td> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;"></td></tr> <tr> <td style = "margin:0px;padding:0;text-align:right; border:5px solid SkyBlue; background:SkyBlue;">score</td> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;"></td></tr> </tbody> </table> <br>
+<pre style='margin:0;padding:0;'>2			int score = 0;</pre> <table style="font-size:10pt; background:Silver; border:0px; border-spacing:0px; margin:0px;padding:0;"> <tbody id="value_table"> <tr></tr> <tr> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; ">main() 함수</td></tr> <tr></tr> <tr> <td style = "margin:0px;padding:0;text-align:right; border:5px solid SkyBlue; background:SkyBlue;">scan</td> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">→</td> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; "></td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">(Scanner객체)</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid MediumSeaGreen; background:Silver;">System.in</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">등의 데이터와 메서드 포함</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:right; border:5px solid SkyBlue; background:SkyBlue;">score</td> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">0</td></tr> </tbody> </table> <br>
+<pre style='margin:0;padding:0;'>3			System.out.println( "0점 ~ 100점 사이의 점수를 입력하세요: ");</pre>
+<pre style='background-color:black; color:white; width:807px; margin:0; padding:0;'>0점 ~ 100점 사이의 점수를 입력하세요: </pre><br>
+<pre style='margin:0;padding:0;'>4			score = scan.nextInt(); </pre>
+<pre style='background-color:black; color:white; width:807px; margin:0; padding:0;'>85<br></pre> <table style="font-size:10pt; background:Silver; border:0px; border-spacing:0px; margin:0px;padding:0;"> <tbody id="value_table"> <tr></tr> <tr> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; ">main() 함수</td></tr> <tr></tr> <tr> <td style = "margin:0px;padding:0;text-align:right; border:5px solid SkyBlue; background:SkyBlue;">scan</td> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">→</td> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; "></td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">(Scanner객체)</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid MediumSeaGreen; background:Silver;">System.in</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">등의 데이터와 메서드 포함</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:right; border:5px solid SkyBlue; background:SkyBlue;">score</td> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;"> <input id='blank0' type='text' required minlength='1' maxlength='30' size='20' onchange='f6(0)'> &nbsp; <del>0</del></td></tr> </tbody> </table> <br>
+<pre style='margin:0;padding:0;'>5			switch ( score / 10 )							</pre> <table style="font-size:10pt; background:Silver; border:0px; border-spacing:0px; margin:0px;padding:0;"> <tbody id="value_table"> <tr></tr> <tr> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; ">main() 함수</td></tr> <tr></tr> <tr> <td style = "margin:0px;padding:0;text-align:right; border:5px solid SkyBlue; background:SkyBlue;">scan</td> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">→</td> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; "></td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">(Scanner객체)</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid MediumSeaGreen; background:Silver;">System.in</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">등의 데이터와 메서드 포함</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:right; border:5px solid SkyBlue; background:SkyBlue;">score</td> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">85</td></tr> </tbody> </table> <br>
+<pre style='margin:0;padding:0;'>6				case 10: case 9: 							</pre><br>
+<pre style='margin:0;padding:0;'>8				case 8: 									</pre><br>
+<pre style='margin:0;padding:0;'>9					System.out.println( "끝내주게 ");</pre>
+<pre style='background-color:black; color:white; width:807px; margin:0; padding:0;'>끝내주게 </pre><br>
+<pre style='margin:0;padding:0;'>11					System.out.println( "잘 ");</pre>
+<pre style='background-color:black; color:white; width:807px; margin:0; padding:0;'>잘 </pre><br>
+<pre style='margin:0;padding:0;'>13					System.out.println( "했다");</pre>
+<pre style='background-color:black; color:white; width:807px; margin:0; padding:0;'>했다</pre><br>
+<pre style='margin:0;padding:0;'>14			return;</pre><br>
+<table border='1'></table> 			</div> 		</div> 	</body> </html> 

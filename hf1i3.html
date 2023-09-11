@@ -1,0 +1,69 @@
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <!--		<s-c-r-i-p-t a-s-y-n-c s-r-c="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> --> <!--		<s-c-r-i-p-t type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script> -->		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script> 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 		<script type="text/javascript" src="https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/J0103.js"></script> 		<script type="text/javascript" src="../reading/functions.js"></script> 		<link rel="stylesheet" href="../reading/layout.css"> 	</head> 	<body onload='f2();' onkeydown='f4()' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"></div> 			<div id = "navigationBox"></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>음식을 주문 받는 문제입니다 이를 해결하는 다음 프로그램을 해석하세요 </pre> 				<pre class='selectable'>주문 도와드리겠습니다, 손님.
+메인요리는 고르셨습니까 : <b><font color='red'></font></b>
+소스는 어떻게 할까요 : 
+음료는 무엇으로 준비할까요 : 
+메인요리는 케이준치킨샐러드, 소스는 허니머스터드드레싱, 음료는 콜라를 선택하셨습니다. 
+준비하겠습니다, 잠시만 기다려 주십시오.
+</pre><br><pre class='selectable'>주문 도와드리겠습니다, 손님.
+메인요리는 고르셨습니까 : <b><font color='red'>샐러드파스타</font></b>
+소스는 어떻게 할까요 : <b><font color='red'>들깨드레싱</font></b>
+음료는 무엇으로 준비할까요 : <b><font color='red'>사이다</font></b>
+메인요리는 샐러드파스타, 소스는 들깨드레싱, 음료는 사이다를 선택하셨습니다. 
+준비하겠습니다, 잠시만 기다려 주십시오.
+</pre><br><pre class='selectable'>주문 도와드리겠습니다, 손님.
+메인요리는 고르셨습니까 : <b><font color='red'>야채샐러드</font></b>
+소스는 어떻게 할까요 : <b><font color='red'>키위드레싱</font></b>
+음료는 무엇으로 준비할까요 : <b><font color='red'>커피</font></b>
+메인요리는 야채샐러드, 소스는 키위드레싱, 음료는 커피를 선택하셨습니다.
+준비하겠습니다, 잠시만 기다려 주십시오.
+</pre><br> 	  				<h4>알고리즘</h4> 				<pre style='white-space:normal;'>프로그램시작 <br>&nbsp; &nbsp;손님에게 주문 받기 <br>&nbsp; &nbsp;&nbsp; &nbsp;메인요리 주문 받기 <br>&nbsp; &nbsp;&nbsp; &nbsp;소스 주문 받기 <br>&nbsp; &nbsp;&nbsp; &nbsp;음료 주문 받기 <br>&nbsp; &nbsp;주문 내역 확인 <br>프로그램 종료 <br></pre> 		 				<br><h4>프로그램 코드 <input id='btn' type='button' value='실행순서 및 메모리상태 확인' onclick='f5();'/></h4>  				<div id = "codeBox"><pre id="code0" class="unselectable codeClass">	<font color="green">// 파일명 : ./Chapter01/FoodOrder.java</font> 
+</pre><pre id="code0" class="unselectable codeClass">	<font color='red' title="다른 패키지 클래스를 가져오기">import</font> java.lang.System;							 
+</pre><pre id="code0" class="unselectable codeClass">	<font color='red' title="다른 패키지 클래스를 가져오기">import</font> <font color='red' title="데이터를 읽어오는 기능을 제공하는 패키지">java.util.Scanner</font>;							 
+</pre><pre id="code0" class="unselectable codeClass">	 
+</pre><pre id="code0" class="unselectable codeClass">	public class Main  
+</pre><pre id="code0" class="unselectable codeClass">	{ 
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 프로그램시작 </b></font>
+</pre>
+<pre id="code1" class="unselectable codeClass">1		public static void main( <font color='red' title="문자열 클래스">String</font>[] args )  						 
+</pre><pre id="code0" class="unselectable codeClass">		{ 
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">// 변수 선언 및 초기화</font> 
+</pre><pre id="code0" class="unselectable codeClass">			<font color='red' title="데이터를 읽어오는 기능을 제공하는 클래스">Scanner</font> scan = <font color='red' title="클래스 객체를 메모리에 생성">new</font> <font color='red' title="데이터를 읽어오는 기능을 제공하는 클래스">Scanner</font>( <font color='red' title="키보드와 같은 표준 입력">System.in</font> );			 
+</pre><pre id="code0" class="unselectable codeClass">			<font color='red' title="문자열 클래스">String</font> mainDish = <font color='red' title="객체가 없음">null</font>;						 
+</pre><pre id="code0" class="unselectable codeClass">			<font color='red' title="문자열 클래스">String</font> sauce = <font color='red' title="객체가 없음">null</font>;						 
+</pre>
+<pre id="code2" class="unselectable codeClass">2			<font color='red' title="문자열 클래스">String</font> drink = <font color='red' title="객체가 없음">null</font>;						 
+</pre><pre id="code0" class="unselectable codeClass">	 
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 손님에게 주문 받기 </b></font>
+</pre>
+<pre id="code3" class="unselectable codeClass">3			System.out.<font color='red' title="주어진 내용과 줄바꿈(new line) 문자를 출력하는 메서드">println</font>( "주문 도와드리겠습니다, 손님." );			 
+</pre><pre id="code0" class="unselectable codeClass">	 
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 메인요리 주문 받기 </b></font>
+</pre>
+<pre id="code4" class="unselectable codeClass">4			System.out.<font color='red' title="주어진 내용을 출력하는 메서드">print</font>( "메인요리는 고르셨습니까 : " );				 
+</pre>
+<pre id="code5" class="unselectable codeClass">5			mainDish = scan.<font color='red' title="문자열 데이터를 한 줄씩 읽어오는 메서드">nextLine</font>();								 
+</pre><pre id="code0" class="unselectable codeClass">	 
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 소스 주문 받기 </b></font>
+</pre>
+<pre id="code6" class="unselectable codeClass">6			System.out.<font color='red' title="주어진 내용을 출력하는 메서드">print</font>( "소스는 어떻게 할까요 : " );				 
+</pre>
+<pre id="code7" class="unselectable codeClass">7			sauce = scan.<font color='red' title="문자열 데이터를 한 줄씩 읽어오는 메서드">nextLine</font>();								 
+</pre><pre id="code0" class="unselectable codeClass">	 
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 음료 주문 받기 </b></font>
+</pre>
+<pre id="code8" class="unselectable codeClass">8			System.out.<font color='red' title="주어진 내용을 출력하는 메서드">print</font>( "음료는 무엇으로 준비할까요 : " );			 
+</pre>
+<pre id="code9" class="unselectable codeClass">9			drink = scan.<font color='red' title="문자열 데이터를 한 줄씩 읽어오는 메서드">nextLine</font>();								 
+</pre><pre id="code0" class="unselectable codeClass">	 
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 주문 내역 확인 </b></font>
+</pre>
+<pre id="code10" class="unselectable codeClass">10			System.out.<font color='red' title="주어진 내용과 줄바꿈(new line) 문자를 출력하는 메서드">println</font>( "메인요리는 " + mainDish + ", 소스는 " + sauce + ", 음료는 " + drink + "를 선택하셨습니다. " ); 
+</pre>
+<pre id="code11" class="unselectable codeClass">11			System.out.<font color='red' title="주어진 내용과 줄바꿈(new line) 문자를 출력하는 메서드">println</font>( "준비하겠습니다, 잠시만 기다려 주십시오." );	 
+</pre><pre id="code0" class="unselectable codeClass">	 
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 프로그램 종료 </b></font>
+</pre>
+<pre id="code12" class="unselectable codeClass">12			return; 
+</pre><pre id="code0" class="unselectable codeClass">		} 
+</pre><pre id="code0" class="unselectable codeClass">	} 
+</pre></div>	 	 				<br><h4>키워드 설명</h4> 				<pre id = "d3" style='white-space:normal;'></pre> 			 				<h4>실행 순서</h4> 				<pre id = "d4" style='white-space:normal; width:800px;'> </pre> 				<pre style='white-space:normal;'> 					※ 실행순서 및 메모리상태는 A키(이전)및 D키(다음)를 눌러도 확인할 수 있습니다  				</pre> 				<br><br> 			</div> 			<div id = "floatingBox"> 				<pre id = "outputBox" class ="outputBox"></pre>  				<div id = "intermediateResult"> 					<img id = "d7"> 					<table style = "border-spacing:0px;margin:0px;table-layout:auto;"> 						<tbody id = "d8"></tbody> 					</table> 				</div> 			</div> 		</div> 	</body> </html> 

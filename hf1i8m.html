@@ -1,0 +1,87 @@
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script type="text/javascript" src="https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/J0108.js"></script> 		<script type="text/javascript" src="../reading/functions.js"></script> 		<link rel="stylesheet" href="../reading/layout.css"> 		<script> 			const d10 = [ ["4"], 							]; 		</script> 	</head> 	<body onload='f1();' onkeydown='f4()' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> 			</div> 			<div id = "navigationBox"> 			</div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>입력받은 달의 영어이름을 출력하는 문제입니다 이를 해결하는 다음 프로그램의 실행상태를 확인하세요 참고로, 달의 영어이름은 
+1월 - January, 
+2월 - February, 
+3월 - March, 
+4월 - April, 
+5월 - May, 
+6월 - June, 
+7월 - July, 
+8월 - August, 
+9월 - September, 
+10월 - October, 
+11월 - November, 
+12월 - December와 같습니다.</pre> 				<pre class='selectable'>1월 ~ 12월 사이의 월을 입력하세요 : <b><font color='red'>4</font></b>
+4월의 영어이름은 April 입니다
+</pre><br> 	   				<h4>프로그램 코드</h4> 				<pre>	import java.lang.System;
+	import java.util.Scanner;
+	
+	public class Main 
+	{
+1		public static void main( String[] args ) 
+		{
+			Scanner scan = new Scanner( System.in );
+2			int month = 0;
+	
+3			System.out.print( "1월 ~ 12월 사이의 월을 입력하세요 : ");
+4			month = scan.nextInt(); 
+	
+5			switch ( month )								
+			{
+6				case 1: 									
+7					System.out.println( "1월의 영어이름은 January 입니다" );
+8					break;									
+9				case 2: 									
+10					System.out.println( "2월의 영어이름은 February 입니다" );
+11					break;									
+12				case 3:										
+13					System.out.println( "3월의 영어이름은 March 입니다" );
+14					break;									
+15				case 4: 									
+16					System.out.println( "4월의 영어이름은 April 입니다" );
+17					break;									
+18				case 5: 									
+19					System.out.println( "5월의 영어이름은 May 입니다" );
+20					break;									
+21				case 6:										
+22					System.out.println( "6월의 영어이름은 June 입니다" );
+23					break;									
+24				case 7: 									
+25					System.out.println( "7월의 영어이름은 July 입니다" );
+26					break;									
+27				case 8: 									
+28					System.out.println( "8월의 영어이름은 August 입니다" );
+29					break;									
+30				case 9:										
+31					System.out.println( "9월의 영어이름은 September 입니다" );
+32					break;									
+33				case 10: 									
+34					System.out.println( "10월의 영어이름은 October 입니다" );
+35					break;									
+36				case 11: 									
+37					System.out.println( "11월의 영어이름은 November 입니다" );
+38					break;									
+39				default:									
+40					System.out.println( "12월의 영어이름은 December 입니다" );
+			}
+	
+41			return;
+		}
+	}
+	</pre> 				<br>
+<h4>프로그램의 실행순서(12개) 및 실행상태</h4>
+<pre style='margin:0;padding:0;'>1		public static void main( String[] args ) </pre> <table style="font-size:10pt; background:Silver; border:0px; border-spacing:0px; margin:0px;padding:0;"> <tbody id="value_table"> <tr></tr> <tr> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; ">main() 함수</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:right; border:5px solid SkyBlue; background:SkyBlue;">scan</td> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;"></td></tr> <tr> <td style = "margin:0px;padding:0;text-align:right; border:5px solid SkyBlue; background:SkyBlue;">month</td> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;"></td></tr> </tbody> </table> <br>
+<pre style='margin:0;padding:0;'>2			int month = 0;</pre> <table style="font-size:10pt; background:Silver; border:0px; border-spacing:0px; margin:0px;padding:0;"> <tbody id="value_table"> <tr></tr> <tr> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; ">main() 함수</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:right; border:5px solid SkyBlue; background:SkyBlue;">scan</td> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">→</td> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; "></td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">(Scanner 객체)</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid MediumSeaGreen; background:Silver;">System.in</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">등의 데이터와 메서드 포함</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:right; border:5px solid SkyBlue; background:SkyBlue;">month</td> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">0</td></tr> </tbody> </table> <br>
+<pre style='margin:0;padding:0;'>3			System.out.print( "1월 ~ 12월 사이의 월을 입력하세요 : ");</pre>
+<pre style='background-color:black; color:white; width:807px; margin:0; padding:0;'>1월 ~ 12월 사이의 월을 입력하세요 : </pre><br>
+<pre style='margin:0;padding:0;'>4			month = scan.nextInt(); </pre>
+<pre style='background-color:black; color:white; width:807px; margin:0; padding:0;'>4<br></pre> <table style="font-size:10pt; background:Silver; border:0px; border-spacing:0px; margin:0px;padding:0;"> <tbody id="value_table"> <tr></tr> <tr> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; ">main() 함수</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:right; border:5px solid SkyBlue; background:SkyBlue;">scan</td> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">→</td> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; "></td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">(Scanner 객체)</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid MediumSeaGreen; background:Silver;">System.in</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">등의 데이터와 메서드 포함</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:right; border:5px solid SkyBlue; background:SkyBlue;">month</td> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;"> <input id='blank0' type='text' required minlength='1' maxlength='30' size='20' onchange='f6(0)'> &nbsp; <del>0</del></td></tr> </tbody> </table> <br>
+<pre style='margin:0;padding:0;'>5			switch ( month )								</pre> <table style="font-size:10pt; background:Silver; border:0px; border-spacing:0px; margin:0px;padding:0;"> <tbody id="value_table"> <tr></tr> <tr> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; ">main() 함수</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:right; border:5px solid SkyBlue; background:SkyBlue;">scan</td> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">→</td> <td style = "margin:0px;padding:0;text-align:left; border:0px solid Silver; background:Silver; "></td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">(Scanner 객체)</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid MediumSeaGreen; background:Silver;">System.in</td> <td style = "margin:0px;padding:0;text-align:left; border:5px solid MediumSeaGreen; background:MediumSeaGreen;">등의 데이터와 메서드 포함</td></tr> <tr> <td style = "margin:0px;padding:0;text-align:right; border:5px solid SkyBlue; background:SkyBlue;">month</td> <td style = "margin:0px;padding:0;text-align:left;   border:5px solid SkyBlue; background:Silver;">4</td></tr> </tbody> </table> <br>
+<pre style='margin:0;padding:0;'>6				case 1: 									</pre><br>
+<pre style='margin:0;padding:0;'>9				case 2: 									</pre><br>
+<pre style='margin:0;padding:0;'>12				case 3:										</pre><br>
+<pre style='margin:0;padding:0;'>15				case 4: 									</pre><br>
+<pre style='margin:0;padding:0;'>16					System.out.println( "4월의 영어이름은 April 입니다" );</pre>
+<pre style='background-color:black; color:white; width:807px; margin:0; padding:0;'>4월의 영어이름은 April 입니다</pre><br>
+<pre style='margin:0;padding:0;'>17					break;									</pre><br>
+<pre style='margin:0;padding:0;'>41			return;</pre><br>
+<table border='1'></table> 			</div> 		</div> 	</body> </html> 
