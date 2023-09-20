@@ -1,0 +1,134 @@
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <!--		<s-c-r-i-p-t a-s-y-n-c s-r-c="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> --> <!--		<s-c-r-i-p-t type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script> -->		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script> 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 		<script type="text/javascript" src="./../../OneDrive_Web_js/J0108.js"></script> 		<script type="text/javascript" src="../reading/functions.js"></script> 		<link rel="stylesheet" href="../reading/layout.css"> 	</head> 	<body onload='f2();' onkeydown='f4()' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"></div> 			<div id = "navigationBox"></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>입력받은 달의 영어이름을 출력하는 문제입니다 이를 해결하는 다음 프로그램을 해석하세요 참고로, 달의 영어이름은 
+1월 - January, 
+2월 - February, 
+3월 - March, 
+4월 - April, 
+5월 - May, 
+6월 - June, 
+7월 - July, 
+8월 - August, 
+9월 - September, 
+10월 - October, 
+11월 - November, 
+12월 - December와 같습니다.</pre> 				<pre class='selectable'>1월 ~ 12월 사이의 월을 입력하세요 : <b><font color='red'>4</font></b>
+4월의 영어이름은 April 입니다
+</pre><br><pre class='selectable'>1월 ~ 12월 사이의 월을 입력하세요 : <b><font color='red'>3</font></b>
+3월의 영어이름은 March 입니다
+</pre><br><pre class='selectable'>1월 ~ 12월 사이의 월을 입력하세요 : <b><font color='red'>5</font></b>
+5월의 영어이름은 May 입니다
+</pre><br> 	  				<h4>알고리즘</h4> 				<pre style='white-space:normal;'>프로그램 시작 <br>&nbsp; &nbsp;사용자에게 달을 입력받기 <br>&nbsp; &nbsp;입력받은 달의 영어이름을 출력 <br>&nbsp; &nbsp;&nbsp; &nbsp;1월이면 January를 출력 <br>&nbsp; &nbsp;&nbsp; &nbsp;2월이면 February를 출력 <br>&nbsp; &nbsp;&nbsp; &nbsp;3월이면 March를 출력 <br>&nbsp; &nbsp;&nbsp; &nbsp;4월이면 April를 출력 <br>&nbsp; &nbsp;&nbsp; &nbsp;5월이면 May를 출력 <br>&nbsp; &nbsp;&nbsp; &nbsp;6월이면 June를 출력 <br>&nbsp; &nbsp;&nbsp; &nbsp;7월이면 July를 출력 <br>&nbsp; &nbsp;&nbsp; &nbsp;8월이면 August를 출력 <br>&nbsp; &nbsp;&nbsp; &nbsp;9월이면 September를 출력 <br>&nbsp; &nbsp;&nbsp; &nbsp;10월이면 October를 출력 <br>&nbsp; &nbsp;&nbsp; &nbsp;11월이면 November를 출력 <br>&nbsp; &nbsp;&nbsp; &nbsp;12월이면 December를 출력 <br>프로그램 종료 <br></pre> 		 				<br><h4>프로그램 코드 <input id='btn' type='button' value='실행순서 및 메모리상태 확인' onclick='f5();'/></h4>  				<div id = "codeBox"><pre id="code0" class="unselectable codeClass">	<font color="green">// 파일명 : ./Chapter01/Month.java</font> 
+</pre><pre id="code0" class="unselectable codeClass">	import java.lang.System; 
+</pre><pre id="code0" class="unselectable codeClass">	import java.util.Scanner; 
+</pre><pre id="code0" class="unselectable codeClass">	 
+</pre><pre id="code0" class="unselectable codeClass">	public class Month  
+</pre><pre id="code0" class="unselectable codeClass">	{ 
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 프로그램 시작 </b></font>
+</pre>
+<pre id="code1" class="unselectable codeClass">1		public static void main( String[] args )  
+</pre><pre id="code0" class="unselectable codeClass">		{ 
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">// 변수 초기화</font> 
+</pre><pre id="code0" class="unselectable codeClass">			Scanner scan = new Scanner( System.in ); 
+</pre>
+<pre id="code2" class="unselectable codeClass">2			int month = 0; 
+</pre><pre id="code0" class="unselectable codeClass">	 
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 사용자에게 달을 입력받기 </b></font>
+</pre>
+<pre id="code3" class="unselectable codeClass">3			System.out.print( "1월 ~ 12월 사이의 월을 입력하세요 : "); 
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">// 4월을 입력한다고 가정</font> 
+</pre>
+<pre id="code4" class="unselectable codeClass">4			month = scan.nextInt();  
+</pre><pre id="code0" class="unselectable codeClass">	 
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 입력받은 달의 영어이름을 출력 </b></font>
+</pre>
+<pre id="code5" class="unselectable codeClass">5			<font color='red' title="switch문은 switch( A ) { case B : C ... default : D }로 구성되며, 정수값 A와 B가 같으면 명령문 C 등을 실행">switch</font> ( month )								 
+</pre><pre id="code0" class="unselectable codeClass">			{ 
+</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 1월이면 January를 출력 </b></font>
+</pre>
+<pre id="code6" class="unselectable codeClass">6				<font color='red' title="case는 switch( A ) { case B : C ...}에서 사용되며, 변수 A가 정수값 B와 같으면 C를 수행하고 아니면 나머지 조건을 비교">case</font> 1: 									 
+</pre>
+<pre id="code7" class="unselectable codeClass">7					System.out.println( "1월의 영어이름은 January 입니다" ); 
+</pre>
+<pre id="code8" class="unselectable codeClass">8					<font color='red' title="해당 case 문의 명령문을 실행하고 다른 case 문의 명령문은 건너띄고 switch문을 빠져나옴">break</font>;									 
+</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 2월이면 February를 출력 </b></font>
+</pre>
+<pre id="code9" class="unselectable codeClass">9				<font color='red' title="case는 switch( A ) { case B : C ...}에서 사용되며, 변수 A가 정수값 B와 같으면 C를 수행하고 아니면 나머지 조건을 비교">case</font> 2: 									 
+</pre>
+<pre id="code10" class="unselectable codeClass">10					System.out.println( "2월의 영어이름은 February 입니다" ); 
+</pre>
+<pre id="code11" class="unselectable codeClass">11					<font color='red' title="해당 case 문의 명령문을 실행하고 다른 case 문의 명령문은 건너띄고 switch문을 빠져나옴">break</font>;									 
+</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 3월이면 March를 출력 </b></font>
+</pre>
+<pre id="code12" class="unselectable codeClass">12				<font color='red' title="case는 switch( A ) { case B : C ...}에서 사용되며, 변수 A가 정수값 B와 같으면 C를 수행하고 아니면 나머지 조건을 비교">case</font> 3:										 
+</pre>
+<pre id="code13" class="unselectable codeClass">13					System.out.println( "3월의 영어이름은 March 입니다" ); 
+</pre>
+<pre id="code14" class="unselectable codeClass">14					<font color='red' title="해당 case 문의 명령문을 실행하고 다른 case 문의 명령문은 건너띄고 switch문을 빠져나옴">break</font>;									 
+</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 4월이면 April를 출력 </b></font>
+</pre>
+<pre id="code15" class="unselectable codeClass">15				<font color='red' title="case는 switch( A ) { case B : C ...}에서 사용되며, 변수 A가 정수값 B와 같으면 C를 수행하고 아니면 나머지 조건을 비교">case</font> 4: 									 
+</pre>
+<pre id="code16" class="unselectable codeClass">16					System.out.println( "4월의 영어이름은 April 입니다" ); 
+</pre>
+<pre id="code17" class="unselectable codeClass">17					<font color='red' title="해당 case 문의 명령문을 실행하고 다른 case 문의 명령문은 건너띄고 switch문을 빠져나옴">break</font>;									 
+</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 5월이면 May를 출력 </b></font>
+</pre>
+<pre id="code18" class="unselectable codeClass">18				<font color='red' title="case는 switch( A ) { case B : C ...}에서 사용되며, 변수 A가 정수값 B와 같으면 C를 수행하고 아니면 나머지 조건을 비교">case</font> 5: 									 
+</pre>
+<pre id="code19" class="unselectable codeClass">19					System.out.println( "5월의 영어이름은 May 입니다" ); 
+</pre>
+<pre id="code20" class="unselectable codeClass">20					<font color='red' title="해당 case 문의 명령문을 실행하고 다른 case 문의 명령문은 건너띄고 switch문을 빠져나옴">break</font>;									 
+</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 6월이면 June를 출력 </b></font>
+</pre>
+<pre id="code21" class="unselectable codeClass">21				<font color='red' title="case는 switch( A ) { case B : C ...}에서 사용되며, 변수 A가 정수값 B와 같으면 C를 수행하고 아니면 나머지 조건을 비교">case</font> 6:										 
+</pre>
+<pre id="code22" class="unselectable codeClass">22					System.out.println( "6월의 영어이름은 June 입니다" ); 
+</pre>
+<pre id="code23" class="unselectable codeClass">23					<font color='red' title="해당 case 문의 명령문을 실행하고 다른 case 문의 명령문은 건너띄고 switch문을 빠져나옴">break</font>;									 
+</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 7월이면 July를 출력 </b></font>
+</pre>
+<pre id="code24" class="unselectable codeClass">24				<font color='red' title="case는 switch( A ) { case B : C ...}에서 사용되며, 변수 A가 정수값 B와 같으면 C를 수행하고 아니면 나머지 조건을 비교">case</font> 7: 									 
+</pre>
+<pre id="code25" class="unselectable codeClass">25					System.out.println( "7월의 영어이름은 July 입니다" ); 
+</pre>
+<pre id="code26" class="unselectable codeClass">26					<font color='red' title="해당 case 문의 명령문을 실행하고 다른 case 문의 명령문은 건너띄고 switch문을 빠져나옴">break</font>;									 
+</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 8월이면 August를 출력 </b></font>
+</pre>
+<pre id="code27" class="unselectable codeClass">27				<font color='red' title="case는 switch( A ) { case B : C ...}에서 사용되며, 변수 A가 정수값 B와 같으면 C를 수행하고 아니면 나머지 조건을 비교">case</font> 8: 									 
+</pre>
+<pre id="code28" class="unselectable codeClass">28					System.out.println( "8월의 영어이름은 August 입니다" ); 
+</pre>
+<pre id="code29" class="unselectable codeClass">29					<font color='red' title="해당 case 문의 명령문을 실행하고 다른 case 문의 명령문은 건너띄고 switch문을 빠져나옴">break</font>;									 
+</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 9월이면 September를 출력 </b></font>
+</pre>
+<pre id="code30" class="unselectable codeClass">30				<font color='red' title="case는 switch( A ) { case B : C ...}에서 사용되며, 변수 A가 정수값 B와 같으면 C를 수행하고 아니면 나머지 조건을 비교">case</font> 9:										 
+</pre>
+<pre id="code31" class="unselectable codeClass">31					System.out.println( "9월의 영어이름은 September 입니다" ); 
+</pre>
+<pre id="code32" class="unselectable codeClass">32					<font color='red' title="해당 case 문의 명령문을 실행하고 다른 case 문의 명령문은 건너띄고 switch문을 빠져나옴">break</font>;									 
+</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 10월이면 October를 출력 </b></font>
+</pre>
+<pre id="code33" class="unselectable codeClass">33				<font color='red' title="case는 switch( A ) { case B : C ...}에서 사용되며, 변수 A가 정수값 B와 같으면 C를 수행하고 아니면 나머지 조건을 비교">case</font> 10: 									 
+</pre>
+<pre id="code34" class="unselectable codeClass">34					System.out.println( "10월의 영어이름은 October 입니다" ); 
+</pre>
+<pre id="code35" class="unselectable codeClass">35					<font color='red' title="해당 case 문의 명령문을 실행하고 다른 case 문의 명령문은 건너띄고 switch문을 빠져나옴">break</font>;									 
+</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 11월이면 November를 출력 </b></font>
+</pre>
+<pre id="code36" class="unselectable codeClass">36				<font color='red' title="case는 switch( A ) { case B : C ...}에서 사용되며, 변수 A가 정수값 B와 같으면 C를 수행하고 아니면 나머지 조건을 비교">case</font> 11: 									 
+</pre>
+<pre id="code37" class="unselectable codeClass">37					System.out.println( "11월의 영어이름은 November 입니다" ); 
+</pre>
+<pre id="code38" class="unselectable codeClass">38					<font color='red' title="해당 case 문의 명령문을 실행하고 다른 case 문의 명령문은 건너띄고 switch문을 빠져나옴">break</font>;									 
+</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 12월이면 December를 출력 </b></font>
+</pre>
+<pre id="code39" class="unselectable codeClass">39				<font color='red' title="switch( A ) { case B : C ... default : D }에서 정수값 A와 같은 case를 못 찾으면 명령문 D를 실행">default</font>:									 
+</pre>
+<pre id="code40" class="unselectable codeClass">40					System.out.println( "12월의 영어이름은 December 입니다" ); 
+</pre><pre id="code0" class="unselectable codeClass">			} 
+</pre><pre id="code0" class="unselectable codeClass">	 
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 프로그램 종료 </b></font>
+</pre>
+<pre id="code41" class="unselectable codeClass">41			return; 
+</pre><pre id="code0" class="unselectable codeClass">		} 
+</pre><pre id="code0" class="unselectable codeClass">	} 
+</pre></div>	 	 				<br><h4>키워드 설명</h4> 				<pre id = "d3" style='white-space:normal;'></pre> 			 				<h4>실행 순서</h4> 				<pre id = "d4" style='white-space:normal; width:800px;'> </pre> 				<pre style='white-space:normal;'> 					※ 실행순서 및 메모리상태는 A키(이전)및 D키(다음)를 눌러도 확인할 수 있습니다  				</pre> 				<br><br> 			</div> 			<div id = "floatingBox"> 				<pre id = "outputBox" class ="outputBox"></pre>  				<div id = "intermediateResult"> 					<img id = "d7"> 					<table style = "border-spacing:0px;margin:0px;table-layout:auto;"> 						<tbody id = "d8"></tbody> 					</table> 				</div> 			</div> 		</div> 	</body> </html> 

@@ -1,0 +1,34 @@
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script type="text/javascript" src="./../../OneDrive_Web_js/J0105.js"></script> 		<script type="text/javascript" src="../reading/functions.js"></script> 		<link rel="stylesheet" href="../reading/layout.css"> 		<script> 			var d10 = "1 2 4 3 5 6 7 8 10 9 11 12 13 14 15"; 		</script> 	</head> 	<body onload='f1();' onkeydown='f4()' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> 			</div> 			<div id = "navigationBox"> 			</div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>증가연산자(++)와 감소연산자(--)의 전위연산자와 후위연산자를 실습하고 그 결과를 출력하는 문제입니다 실행순서를 클릭하세요 </pre> 				<pre class='selectable'>a = 3일 때 c = ++a 적용 후 결과 a = 4, c = 4
+b = 3일 때 d = b++ 적용 후 결과 b = 4, d = 3
+a = 4일 때 c = --a 적용 후 결과 a = 3, c = 3
+b = 4일 때 d = b-- 적용 후 결과 b = 3, d = 4
+</pre><br>  	 				<h4>프로그램 코드</h4> 				<pre></pre><pre id="code0" class="unselectable codeClass">	import java.lang.System;
+</pre><pre id="code0" class="unselectable codeClass">	import java.util.Scanner;
+
+</pre><pre id="code0" class="unselectable codeClass">	public class IncrementDecrement 
+</pre><pre id="code0" class="unselectable codeClass">	{
+</pre><pre id="code1" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('1')">1		public static void main( String[] args ) 
+</pre><pre id="code0" class="unselectable codeClass">		{
+</pre><pre id="code2" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('2')">2			int a = 3, b = 3, c = 0, d = 0;
+
+</pre><pre id="code3" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('3')">3			c = 
+</pre><pre id="code4" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('4')">4			    ++a;										
+</pre><pre id="code5" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('5')">5			d =  
+</pre><pre id="code6" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('6')">6			    b++;										
+
+</pre><pre id="code7" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('7')">7			System.out.println( "a = 3일 때 c = ++a 적용 후 결과 a = " + a + ", c = " + c );			
+</pre><pre id="code8" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('8')">8			System.out.println( "b = 3일 때 d = b++ 적용 후 결과 b = " + b + ", d = " + d );			
+
+</pre><pre id="code9" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('9')">9			c = 
+</pre><pre id="code10" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('10')">10			    --a;										
+</pre><pre id="code11" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('11')">11			d = 
+</pre><pre id="code12" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('12')">12			    b--;										
+
+</pre><pre id="code13" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('13')">13			System.out.println( "a = 4일 때 c = --a 적용 후 결과 a = " + a + ", c = " + c );			
+</pre><pre id="code14" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('14')">14			System.out.println( "b = 4일 때 d = b-- 적용 후 결과 b = " + b + ", d = " + d );			
+
+</pre><pre id="code15" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('15')">15			return;
+</pre><pre id="code0" class="unselectable codeClass">		} 
+</pre><pre id="code0" class="unselectable codeClass">	}
+</pre>
+</pre> 			</div> 			<div id = "floatingBox"> 				<b>실행 순서</b> 				<pre id = "d4" style='white-space:normal; word-wrap:break-word; width:150px;'></pre> 			</div> 		</div> 	</body> </html>   
