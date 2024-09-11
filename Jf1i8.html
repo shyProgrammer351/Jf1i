@@ -1,134 +1,185 @@
-<html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script type="text/javascript" src="../functions.js"></script> 		<script type="text/javascript" src="https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/J0108.js"></script> 	</head> 	<body onload='f1();' onkeydown='f4()' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> JAVA 프로그래밍 </div> 			<div id = "navigationBox"><ol><li><a href='../Jf1i/Jf1i1.html'>입출력/선택문</a></li><ul><li><a href='../Jf1i/Jf1i1.html'>환영 인사말</a></li><li><a href='../Jf1i/Jf1i2.html'>하트 모양</a></li><li><a href='../Jf1i/Jf1i3.html'>음식 주문</a></li><li><a href='../Jf1i/Jf1i4.html'>친구와 대화</a></li><li><a href='../Jf1i/Jf1i5.html'>증가연산자/감소연산자</a></li><li><a href='../Jf1i/Jf1i6.html'>동전 던지기</a></li><li><a href='../Jf1i/Jf1i7.html'>버스요금</a></li><li><a href='../Jf1i/Jf1i8.html'>월별 영어이름</a></li><ul><li><a href='Jf1i8.html'>코드읽기</a></li><li><a href='Jf1i8a.html'>알고리즘</a></li><li><a href='Jf1i8k.html'>키워드</a></li><li><a href='Jf1i8b.html'>빈칸채우기</a></li><li><a href='Jf1i8s.html'>실행순서</a></li><li><a href='Jf1i8m.html'>실행상태</a></li><li><a href='https://github.com/CodeReading101/JAVA/blob/main/Chapter01/Month.java' target='_blank'>소스코드</a></li></ul><li><a href='../Jf1i/Jf1i9.html'>점수별 메시지</a></li><li><a href='../Jf1j/Jf1j0.html'>가위바위보</a></li></ul><li><a href='../Jf2i/Jf2i1.html'>반복문/배열/예외</a></li><li><a href='../Jf3i/Jf3i1.html'>클래스와 객체/패키지</a></li><li><a href='../Jf4i/Jf4i1.html'>상속 및 다형성</a></li><li><a href='../Jf5i/Jf5i1.html'>GUI 기초</a></li><li><a href='../Jf6i/Jf6i1.html'>GUI 응용</a></li><li><a href='../Jf7i/Jf7i1.html'>제네릭/컬렉션/파일</a></li><li><a href='../Jf8i/Jf8i1.html'>스레드/네트워크(1:1)</a></li><li><a href='../Jf9i/Jf9i1.html'>네트워크(1:n)</a></li></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>입력받은 달의 영어이름을 출력하는 문제입니다 이를 해결하는 다음 프로그램을 해석하세요 참고로, 달의 영어이름은 
-1월 - January, 
-2월 - February, 
-3월 - March, 
-4월 - April, 
-5월 - May, 
-6월 - June, 
-7월 - July, 
-8월 - August, 
-9월 - September, 
-10월 - October, 
-11월 - November, 
-12월 - December와 같습니다.</pre> 				<pre class='selectable'>1월 ~ 12월 사이의 월을 입력하세요 : <b><font color='red'>4</font></b>
-4월의 영어이름은 April 입니다
-</pre><br><pre class='selectable'>1월 ~ 12월 사이의 월을 입력하세요 : <b><font color='red'>3</font></b>
-3월의 영어이름은 March 입니다
-</pre><br><pre class='selectable'>1월 ~ 12월 사이의 월을 입력하세요 : <b><font color='red'>5</font></b>
-5월의 영어이름은 May 입니다
-</pre><br> 	  				<h4>알고리즘</h4> 				<pre style='white-space:normal;'>프로그램 시작 <br>&nbsp; &nbsp;사용자에게 달을 입력받기 <br>&nbsp; &nbsp;입력받은 달의 영어이름을 출력 <br>&nbsp; &nbsp;&nbsp; &nbsp;1월이면 January를 출력 <br>&nbsp; &nbsp;&nbsp; &nbsp;2월이면 February를 출력 <br>&nbsp; &nbsp;&nbsp; &nbsp;3월이면 March를 출력 <br>&nbsp; &nbsp;&nbsp; &nbsp;4월이면 April를 출력 <br>&nbsp; &nbsp;&nbsp; &nbsp;5월이면 May를 출력 <br>&nbsp; &nbsp;&nbsp; &nbsp;6월이면 June를 출력 <br>&nbsp; &nbsp;&nbsp; &nbsp;7월이면 July를 출력 <br>&nbsp; &nbsp;&nbsp; &nbsp;8월이면 August를 출력 <br>&nbsp; &nbsp;&nbsp; &nbsp;9월이면 September를 출력 <br>&nbsp; &nbsp;&nbsp; &nbsp;10월이면 October를 출력 <br>&nbsp; &nbsp;&nbsp; &nbsp;11월이면 November를 출력 <br>&nbsp; &nbsp;&nbsp; &nbsp;12월이면 December를 출력 <br>프로그램 종료 <br></pre> 		 				<br><h4>프로그램 코드 <input id='btn' type='button' value='실행순서 및 메모리상태 확인' onclick='f5();'/></h4>  				<div id = "codeBox"><pre id="code0" class="unselectable codeClass">	<font color="green">// 파일명 : ./Chapter01/Month.java</font> 
-</pre><pre id="code0" class="unselectable codeClass">	import java.lang.System; 
-</pre><pre id="code0" class="unselectable codeClass">	import java.util.Scanner; 
-</pre><pre id="code0" class="unselectable codeClass">	 
-</pre><pre id="code0" class="unselectable codeClass">	public class Month  
-</pre><pre id="code0" class="unselectable codeClass">	{ 
+<html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script type="text/javascript" src="../functions.js"></script> 		<script type="text/javascript" src="../Js0J1f/J0108.js"></script> 	</head> 	<body onkeydown='sP3f4()' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> JAVA 프로그래밍 </div> 			<div id = "navigationBox"><ol start=0><li><a href='../Jf0i/Jf0i0.html'>JAVA 프로그래밍 시작</a></li><li><a href='../Jf1i/Jf1i0.html'>출력</a></li><ul><li><a href='../Jf1i/Jf1i1.html'>Hello, World!</a></li><li><a href='../Jf1i/Jf1i2.html'>환영 인사</a></li><li><a href='../Jf1i/Jf1i3.html'>하트 모양</a></li><li><a href='../Jf1i/Jf1i4.html'>꽃 모양</a></li><li><a href='../Jf1i/Jf1i5.html'>미로 맵</a></li><li><a href='../Jf1i/Jf1i8.html'>작은별</a></li><ul><li><a href='Jf1i8.html'>코드읽기</a></li><li><a href='Jf1i8a.html'>알고리즘</a></li><li><a href='Jf1i8k.html'>키워드</a></li><li><a href='Jf1i8b.html'>빈칸채우기</a></li><li><a href='Jf1i8s.html'>실행순서</a></li><li><a href='Jf1i8m.html'>실행상태</a></li><li><a href='./../../github_sourceCode/Chapter01/LittleStar.java' target='code'>소스코드</a></li></ul></ul><li><a href='../Jf2i/Jf2i0.html'>입력</a></li><li><a href='../Jf3i/Jf3i0.html'>변수</a></li><li><a href='../Jf4i/Jf4i0.html'>연산자</a></li><li><a href='../Jf5i/Jf5i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Jf6i/Jf6i0.html'>선택문(if)</a></li><li><a href='../Jf7i/Jf7i0.html'>반복문(while)</a></li><li><a href='../Jf8i/Jf8i0.html'>반복문(for)</a></li><li><a href='../Jf9i/Jf9i0.html'>배열</a></li><li><a href='../Jg0i/Jg0i0.html'>문자열/컬렉션</a></li><li><a href='../Jg1i/Jg1i0.html'>클래스/패키지</a></li><li><a href='../Jg2i/Jg2i0.html'>상속/다형성</a></li><li><a href='../Jg3i/Jg3i0.html'>GUI기초</a></li><li><a href='../Jg4i/Jg4i0.html'>GUI응용</a></li><li><a href='../Jg5i/Jg5i0.html'>예외/쓰레드</a></li><li><a href='../Jg6i/Jg6i0.html'>파일입출력</a></li><li><a href='../Jg7i/Jg7i0.html'>네트워크(1:1)</a></li><li><a href='../Jg8i/Jg8i0.html'>네트워크(1:n)</a></li><li><a href='../Jg9i/Jg9i0.html'>열거형/제네릭</a></li><li><a href='../Jh0i/Jh0i0.html'>재귀함수</a></li></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>작은별 노래를 출력하는 문제입니다 이를 해결하는 다음 프로그램을 해석하세요 <br>[참고] https://www.asciiart.eu/</pre> 				<pre class='selectable'><div style='font-family:monospace;line-height:1;color:yellow;'>              &@              
+             (@@@.            
+            #@@@@@            
+           /@@@@@@@           
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+    /@@@@@@@@@@@@@@@@@@@@@.   
+       @@@@@@@@@@@@@@@@      
+        #@@@@@@@@@@@@@        
+        @@@@@@@@@@@@@@@       
+       @@@@@@@   @@@@@@      
+       @@@           @@@
+       @               @          </div>
+반짝 반짝 작은별 아름답게 비치네 
+</pre><br> 	  				<h4>알고리즘</h4> 				<pre style='white-space:normal;'>프로그램 시작 <br>&nbsp; &nbsp;노란 별 모양을 출력 <br>&nbsp; &nbsp;작은별 노래를 박자에 맞춰 출력 <br>프로그램 종료 <br></pre> 		 				<br><h4>프로그램 코드 <input id='btn' type='button' value='실행순서 및 메모리상태 확인' onclick='sP3f5();'/></h4>  				<div id = "codeBox"><pre id="code0" class="unselectable codeClass">	<font color="green">// 파일명 : ./Chapter01/LittleStar.java</font>
+</pre><pre id="code0" class="unselectable codeClass">		 
+</pre><pre id="code0" class="unselectable codeClass">	<a href='../Jf1i/Jf1i0.html' target='code'>public</a> <a href='../Jf1i/Jf1i0.html' target='code'>class</a> Main
+</pre><pre id="code0" class="unselectable codeClass">	{
 </pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 프로그램 시작 </b></font>
 </pre>
-<pre id="code1" class="unselectable codeClass">1		public static void main( String[] args )  
-</pre><pre id="code0" class="unselectable codeClass">		{ 
-</pre><pre id="code0" class="unselectable codeClass">			<font color="green">// 변수 초기화</font> 
-</pre><pre id="code0" class="unselectable codeClass">			Scanner scan = new Scanner( System.in ); 
+<pre id="code1" class="unselectable codeClass">1		<a href='../Jf1i/Jf1i0.html' target='code'>public</a> <a href='../Jf1i/Jf1i0.html' target='code'>static</a> <a href='../Jf1i/Jf1i0.html' target='code'>void</a> <a href='../Jf1i/Jf1i0.html' target='code'>main</a>( <a href='../Jf1i/Jf1i0.html' target='code'>String</a>[] <a href='../Jf1i/Jf1i0.html' target='code'>args</a> ) {
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 노란 별 모양을 출력 </b></font>
 </pre>
-<pre id="code2" class="unselectable codeClass">2			int month = 0; 
-</pre><pre id="code0" class="unselectable codeClass">	 
-</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 사용자에게 달을 입력받기 </b></font>
+<pre id="code2" class="unselectable codeClass">2			<a href='../Jf1i/Jf1i0.html' target='code'>System.out.print</a>( " <a href='../Jf1i/Jf1i0.html' target='code'>\033</a>[33m" );
 </pre>
-<pre id="code3" class="unselectable codeClass">3			System.out.print( "1월 ~ 12월 사이의 월을 입력하세요 : "); 
-</pre><pre id="code0" class="unselectable codeClass">			<font color="green">// 4월을 입력한다고 가정</font> 
+<pre id="code3" class="unselectable codeClass">3			<a href='../Jf1i/Jf1i0.html' target='code'>System.out.println</a>( "              &@ " );
 </pre>
-<pre id="code4" class="unselectable codeClass">4			month = scan.nextInt();  
-</pre><pre id="code0" class="unselectable codeClass">	 
-</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 입력받은 달의 영어이름을 출력 </b></font>
+<pre id="code4" class="unselectable codeClass">4			<a href='../Jf1i/Jf1i0.html' target='code'>System.out.println</a>( "             (@@@. " );
 </pre>
-<pre id="code5" class="unselectable codeClass">5			<font color='red' title="switch문은 switch( A ) { case B : C ... default : D }로 구성되며, 정수값 A와 B가 같으면 명령문 C 등을 실행">switch</font> ( month )								 
-</pre><pre id="code0" class="unselectable codeClass">			{ 
-</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 1월이면 January를 출력 </b></font>
+<pre id="code5" class="unselectable codeClass">5			<a href='../Jf1i/Jf1i0.html' target='code'>System.out.println</a>( "            #@@@@@ " );
 </pre>
-<pre id="code6" class="unselectable codeClass">6				<font color='red' title="case는 switch( A ) { case B : C ...}에서 사용되며, 변수 A가 정수값 B와 같으면 C를 수행하고 아니면 나머지 조건을 비교">case</font> 1: 									 
+<pre id="code6" class="unselectable codeClass">6			<a href='../Jf1i/Jf1i0.html' target='code'>System.out.println</a>( "           /@@@@@@@ " );
 </pre>
-<pre id="code7" class="unselectable codeClass">7					System.out.println( "1월의 영어이름은 January 입니다" ); 
+<pre id="code7" class="unselectable codeClass">7			<a href='../Jf1i/Jf1i0.html' target='code'>System.out.println</a>( "  @@@@@@@@@@@@@@@@@@@@@@@@@@@ " );
 </pre>
-<pre id="code8" class="unselectable codeClass">8					<font color='red' title="해당 case 문의 명령문을 실행하고 다른 case 문의 명령문은 건너띄고 switch문을 빠져나옴">break</font>;									 
-</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 2월이면 February를 출력 </b></font>
+<pre id="code8" class="unselectable codeClass">8			<a href='../Jf1i/Jf1i0.html' target='code'>System.out.println</a>( "    /@@@@@@@@@@@@@@@@@@@@@. " );
 </pre>
-<pre id="code9" class="unselectable codeClass">9				<font color='red' title="case는 switch( A ) { case B : C ...}에서 사용되며, 변수 A가 정수값 B와 같으면 C를 수행하고 아니면 나머지 조건을 비교">case</font> 2: 									 
+<pre id="code9" class="unselectable codeClass">9			<a href='../Jf1i/Jf1i0.html' target='code'>System.out.println</a>( "       @@@@@@@@@@@@@@@@ " );
 </pre>
-<pre id="code10" class="unselectable codeClass">10					System.out.println( "2월의 영어이름은 February 입니다" ); 
+<pre id="code10" class="unselectable codeClass">10			<a href='../Jf1i/Jf1i0.html' target='code'>System.out.println</a>( "        #@@@@@@@@@@@@@ " );
 </pre>
-<pre id="code11" class="unselectable codeClass">11					<font color='red' title="해당 case 문의 명령문을 실행하고 다른 case 문의 명령문은 건너띄고 switch문을 빠져나옴">break</font>;									 
-</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 3월이면 March를 출력 </b></font>
+<pre id="code11" class="unselectable codeClass">11			<a href='../Jf1i/Jf1i0.html' target='code'>System.out.println</a>( "        @@@@@@@@@@@@@@@ " );
 </pre>
-<pre id="code12" class="unselectable codeClass">12				<font color='red' title="case는 switch( A ) { case B : C ...}에서 사용되며, 변수 A가 정수값 B와 같으면 C를 수행하고 아니면 나머지 조건을 비교">case</font> 3:										 
+<pre id="code12" class="unselectable codeClass">12			<a href='../Jf1i/Jf1i0.html' target='code'>System.out.println</a>( "       @@@@@@@   @@@@@@ " );
 </pre>
-<pre id="code13" class="unselectable codeClass">13					System.out.println( "3월의 영어이름은 March 입니다" ); 
+<pre id="code13" class="unselectable codeClass">13			<a href='../Jf1i/Jf1i0.html' target='code'>System.out.println</a>( "       @@@           @@@ " );
 </pre>
-<pre id="code14" class="unselectable codeClass">14					<font color='red' title="해당 case 문의 명령문을 실행하고 다른 case 문의 명령문은 건너띄고 switch문을 빠져나옴">break</font>;									 
-</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 4월이면 April를 출력 </b></font>
+<pre id="code14" class="unselectable codeClass">14			<a href='../Jf1i/Jf1i0.html' target='code'>System.out.println</a>( "       @               @ <a href='../Jf1i/Jf1i0.html' target='code'>\033</a>[0m " );
+</pre><pre id="code0" class="unselectable codeClass">			 
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 작은별 노래를 박자에 맞춰 출력 </b></font>
 </pre>
-<pre id="code15" class="unselectable codeClass">15				<font color='red' title="case는 switch( A ) { case B : C ...}에서 사용되며, 변수 A가 정수값 B와 같으면 C를 수행하고 아니면 나머지 조건을 비교">case</font> 4: 									 
+<pre id="code15" class="unselectable codeClass">15			<a href='../Jf1i/Jf1i0.html' target='code'>System.out.print</a>( "반" );
 </pre>
-<pre id="code16" class="unselectable codeClass">16					System.out.println( "4월의 영어이름은 April 입니다" ); 
+<pre id="code16" class="unselectable codeClass">16			<a href='../Cf1i/Cf1i0.html#2' target='code'>System.out.flush</a>();
 </pre>
-<pre id="code17" class="unselectable codeClass">17					<font color='red' title="해당 case 문의 명령문을 실행하고 다른 case 문의 명령문은 건너띄고 switch문을 빠져나옴">break</font>;									 
-</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 5월이면 May를 출력 </b></font>
+<pre id="code17" class="unselectable codeClass">17			try {
+</pre><pre id="code0" class="unselectable codeClass">				Thread.sleep(1000);
+</pre><pre id="code0" class="unselectable codeClass">			} catch (InterruptedException e) {
+</pre><pre id="code0" class="unselectable codeClass">				e.printStackTrace();
+</pre><pre id="code0" class="unselectable codeClass">			}
 </pre>
-<pre id="code18" class="unselectable codeClass">18				<font color='red' title="case는 switch( A ) { case B : C ...}에서 사용되며, 변수 A가 정수값 B와 같으면 C를 수행하고 아니면 나머지 조건을 비교">case</font> 5: 									 
+<pre id="code18" class="unselectable codeClass">18			<a href='../Jf1i/Jf1i0.html' target='code'>System.out.print</a>( "짝 " );
 </pre>
-<pre id="code19" class="unselectable codeClass">19					System.out.println( "5월의 영어이름은 May 입니다" ); 
+<pre id="code19" class="unselectable codeClass">19			<a href='../Cf1i/Cf1i0.html#2' target='code'>System.out.flush</a>();
 </pre>
-<pre id="code20" class="unselectable codeClass">20					<font color='red' title="해당 case 문의 명령문을 실행하고 다른 case 문의 명령문은 건너띄고 switch문을 빠져나옴">break</font>;									 
-</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 6월이면 June를 출력 </b></font>
+<pre id="code20" class="unselectable codeClass">20			try {
+</pre><pre id="code0" class="unselectable codeClass">				Thread.sleep(1000);
+</pre><pre id="code0" class="unselectable codeClass">			} catch (InterruptedException e) {
+</pre><pre id="code0" class="unselectable codeClass">				e.printStackTrace();
+</pre><pre id="code0" class="unselectable codeClass">			}
 </pre>
-<pre id="code21" class="unselectable codeClass">21				<font color='red' title="case는 switch( A ) { case B : C ...}에서 사용되며, 변수 A가 정수값 B와 같으면 C를 수행하고 아니면 나머지 조건을 비교">case</font> 6:										 
+<pre id="code21" class="unselectable codeClass">21			<a href='../Jf1i/Jf1i0.html' target='code'>System.out.print</a>( "반" );
 </pre>
-<pre id="code22" class="unselectable codeClass">22					System.out.println( "6월의 영어이름은 June 입니다" ); 
+<pre id="code22" class="unselectable codeClass">22			<a href='../Cf1i/Cf1i0.html#2' target='code'>System.out.flush</a>();
 </pre>
-<pre id="code23" class="unselectable codeClass">23					<font color='red' title="해당 case 문의 명령문을 실행하고 다른 case 문의 명령문은 건너띄고 switch문을 빠져나옴">break</font>;									 
-</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 7월이면 July를 출력 </b></font>
+<pre id="code23" class="unselectable codeClass">23			try {
+</pre><pre id="code0" class="unselectable codeClass">				Thread.sleep(1000);
+</pre><pre id="code0" class="unselectable codeClass">			} catch (InterruptedException e) {
+</pre><pre id="code0" class="unselectable codeClass">				e.printStackTrace();
+</pre><pre id="code0" class="unselectable codeClass">			}
 </pre>
-<pre id="code24" class="unselectable codeClass">24				<font color='red' title="case는 switch( A ) { case B : C ...}에서 사용되며, 변수 A가 정수값 B와 같으면 C를 수행하고 아니면 나머지 조건을 비교">case</font> 7: 									 
+<pre id="code24" class="unselectable codeClass">24			<a href='../Jf1i/Jf1i0.html' target='code'>System.out.print</a>( "짝 " );
 </pre>
-<pre id="code25" class="unselectable codeClass">25					System.out.println( "7월의 영어이름은 July 입니다" ); 
+<pre id="code25" class="unselectable codeClass">25			<a href='../Cf1i/Cf1i0.html#2' target='code'>System.out.flush</a>();
 </pre>
-<pre id="code26" class="unselectable codeClass">26					<font color='red' title="해당 case 문의 명령문을 실행하고 다른 case 문의 명령문은 건너띄고 switch문을 빠져나옴">break</font>;									 
-</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 8월이면 August를 출력 </b></font>
+<pre id="code26" class="unselectable codeClass">26			try {
+</pre><pre id="code0" class="unselectable codeClass">				Thread.sleep(1000);
+</pre><pre id="code0" class="unselectable codeClass">			} catch (InterruptedException e) {
+</pre><pre id="code0" class="unselectable codeClass">				e.printStackTrace();
+</pre><pre id="code0" class="unselectable codeClass">			}
 </pre>
-<pre id="code27" class="unselectable codeClass">27				<font color='red' title="case는 switch( A ) { case B : C ...}에서 사용되며, 변수 A가 정수값 B와 같으면 C를 수행하고 아니면 나머지 조건을 비교">case</font> 8: 									 
+<pre id="code27" class="unselectable codeClass">27			<a href='../Jf1i/Jf1i0.html' target='code'>System.out.print</a>( "작" );
 </pre>
-<pre id="code28" class="unselectable codeClass">28					System.out.println( "8월의 영어이름은 August 입니다" ); 
+<pre id="code28" class="unselectable codeClass">28			<a href='../Cf1i/Cf1i0.html#2' target='code'>System.out.flush</a>();
 </pre>
-<pre id="code29" class="unselectable codeClass">29					<font color='red' title="해당 case 문의 명령문을 실행하고 다른 case 문의 명령문은 건너띄고 switch문을 빠져나옴">break</font>;									 
-</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 9월이면 September를 출력 </b></font>
+<pre id="code29" class="unselectable codeClass">29			try {
+</pre><pre id="code0" class="unselectable codeClass">				Thread.sleep(1000);
+</pre><pre id="code0" class="unselectable codeClass">			} catch (InterruptedException e) {
+</pre><pre id="code0" class="unselectable codeClass">				e.printStackTrace();
+</pre><pre id="code0" class="unselectable codeClass">			}
 </pre>
-<pre id="code30" class="unselectable codeClass">30				<font color='red' title="case는 switch( A ) { case B : C ...}에서 사용되며, 변수 A가 정수값 B와 같으면 C를 수행하고 아니면 나머지 조건을 비교">case</font> 9:										 
+<pre id="code30" class="unselectable codeClass">30			<a href='../Jf1i/Jf1i0.html' target='code'>System.out.print</a>( "은 " );
 </pre>
-<pre id="code31" class="unselectable codeClass">31					System.out.println( "9월의 영어이름은 September 입니다" ); 
+<pre id="code31" class="unselectable codeClass">31			<a href='../Cf1i/Cf1i0.html#2' target='code'>System.out.flush</a>();
 </pre>
-<pre id="code32" class="unselectable codeClass">32					<font color='red' title="해당 case 문의 명령문을 실행하고 다른 case 문의 명령문은 건너띄고 switch문을 빠져나옴">break</font>;									 
-</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 10월이면 October를 출력 </b></font>
+<pre id="code32" class="unselectable codeClass">32			try {
+</pre><pre id="code0" class="unselectable codeClass">				Thread.sleep(1000);
+</pre><pre id="code0" class="unselectable codeClass">			} catch (InterruptedException e) {
+</pre><pre id="code0" class="unselectable codeClass">				e.printStackTrace();
+</pre><pre id="code0" class="unselectable codeClass">			}
 </pre>
-<pre id="code33" class="unselectable codeClass">33				<font color='red' title="case는 switch( A ) { case B : C ...}에서 사용되며, 변수 A가 정수값 B와 같으면 C를 수행하고 아니면 나머지 조건을 비교">case</font> 10: 									 
+<pre id="code33" class="unselectable codeClass">33			<a href='../Jf1i/Jf1i0.html' target='code'>System.out.print</a>( "별 " );
 </pre>
-<pre id="code34" class="unselectable codeClass">34					System.out.println( "10월의 영어이름은 October 입니다" ); 
+<pre id="code34" class="unselectable codeClass">34			<a href='../Cf1i/Cf1i0.html#2' target='code'>System.out.flush</a>();
 </pre>
-<pre id="code35" class="unselectable codeClass">35					<font color='red' title="해당 case 문의 명령문을 실행하고 다른 case 문의 명령문은 건너띄고 switch문을 빠져나옴">break</font>;									 
-</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 11월이면 November를 출력 </b></font>
+<pre id="code35" class="unselectable codeClass">35			sleep(2);
 </pre>
-<pre id="code36" class="unselectable codeClass">36				<font color='red' title="case는 switch( A ) { case B : C ...}에서 사용되며, 변수 A가 정수값 B와 같으면 C를 수행하고 아니면 나머지 조건을 비교">case</font> 11: 									 
+<pre id="code36" class="unselectable codeClass">36			<a href='../Jf1i/Jf1i0.html' target='code'>System.out.print</a>( "아" );
 </pre>
-<pre id="code37" class="unselectable codeClass">37					System.out.println( "11월의 영어이름은 November 입니다" ); 
+<pre id="code37" class="unselectable codeClass">37			<a href='../Cf1i/Cf1i0.html#2' target='code'>System.out.flush</a>();
 </pre>
-<pre id="code38" class="unselectable codeClass">38					<font color='red' title="해당 case 문의 명령문을 실행하고 다른 case 문의 명령문은 건너띄고 switch문을 빠져나옴">break</font>;									 
-</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 12월이면 December를 출력 </b></font>
+<pre id="code38" class="unselectable codeClass">38			try {
+</pre><pre id="code0" class="unselectable codeClass">				Thread.sleep(1000);
+</pre><pre id="code0" class="unselectable codeClass">			} catch (InterruptedException e) {
+</pre><pre id="code0" class="unselectable codeClass">				e.printStackTrace();
+</pre><pre id="code0" class="unselectable codeClass">			}
 </pre>
-<pre id="code39" class="unselectable codeClass">39				<font color='red' title="switch( A ) { case B : C ... default : D }에서 정수값 A와 같은 case를 못 찾으면 명령문 D를 실행">default</font>:									 
+<pre id="code39" class="unselectable codeClass">39			<a href='../Jf1i/Jf1i0.html' target='code'>System.out.print</a>( "름" );
 </pre>
-<pre id="code40" class="unselectable codeClass">40					System.out.println( "12월의 영어이름은 December 입니다" ); 
-</pre><pre id="code0" class="unselectable codeClass">			} 
-</pre><pre id="code0" class="unselectable codeClass">	 
-</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 프로그램 종료 </b></font>
+<pre id="code40" class="unselectable codeClass">40			<a href='../Cf1i/Cf1i0.html#2' target='code'>System.out.flush</a>();
 </pre>
-<pre id="code41" class="unselectable codeClass">41			return; 
-</pre><pre id="code0" class="unselectable codeClass">		} 
-</pre><pre id="code0" class="unselectable codeClass">	} 
-</pre></div>	 	 				<br><h4>키워드 설명</h4> 				<pre id = "d3" style='white-space:normal;'></pre> 			 				<h4>실행 순서</h4> 				<pre id = "d4" style='white-space:normal; width:800px;'> </pre> 				<pre style='white-space:normal;'> 					※ 실행순서 및 메모리상태는 A키(이전)및 D키(다음)를 눌러도 확인할 수 있습니다  				</pre> 				<br><br> 			</div> 			<div id = "floatingBox"> 				<pre id = "outputBox" class ="outputBox" style = "color:White;height:50px;width:316px;padding:10px;margin:0px;"></pre>  				<div id = "intermediateResult"> 					<img id = "d7"> 					<table style = "border-spacing:0px;margin:0px;table-layout:auto;"> 						<tbody id = "d8"></tbody> 					</table> 				</div> 			</div> 		</div> 	</body> </html> 
+<pre id="code41" class="unselectable codeClass">41			try {
+</pre><pre id="code0" class="unselectable codeClass">				Thread.sleep(1000);
+</pre><pre id="code0" class="unselectable codeClass">			} catch (InterruptedException e) {
+</pre><pre id="code0" class="unselectable codeClass">				e.printStackTrace();
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre>
+<pre id="code42" class="unselectable codeClass">42			<a href='../Jf1i/Jf1i0.html' target='code'>System.out.print</a>( "답" );
+</pre>
+<pre id="code43" class="unselectable codeClass">43			<a href='../Cf1i/Cf1i0.html#2' target='code'>System.out.flush</a>();
+</pre>
+<pre id="code44" class="unselectable codeClass">44			try {
+</pre><pre id="code0" class="unselectable codeClass">				Thread.sleep(1000);
+</pre><pre id="code0" class="unselectable codeClass">			} catch (InterruptedException e) {
+</pre><pre id="code0" class="unselectable codeClass">				e.printStackTrace();
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre>
+<pre id="code45" class="unselectable codeClass">45			<a href='../Jf1i/Jf1i0.html' target='code'>System.out.print</a>( "게 " );
+</pre>
+<pre id="code46" class="unselectable codeClass">46			<a href='../Cf1i/Cf1i0.html#2' target='code'>System.out.flush</a>();
+</pre>
+<pre id="code47" class="unselectable codeClass">47			try {
+</pre><pre id="code0" class="unselectable codeClass">				Thread.sleep(1000);
+</pre><pre id="code0" class="unselectable codeClass">			} catch (InterruptedException e) {
+</pre><pre id="code0" class="unselectable codeClass">				e.printStackTrace();
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre>
+<pre id="code48" class="unselectable codeClass">48			<a href='../Jf1i/Jf1i0.html' target='code'>System.out.print</a>( "비" );
+</pre>
+<pre id="code49" class="unselectable codeClass">49			<a href='../Cf1i/Cf1i0.html#2' target='code'>System.out.flush</a>();
+</pre>
+<pre id="code50" class="unselectable codeClass">50			try {
+</pre><pre id="code0" class="unselectable codeClass">				Thread.sleep(1000);
+</pre><pre id="code0" class="unselectable codeClass">			} catch (InterruptedException e) {
+</pre><pre id="code0" class="unselectable codeClass">				e.printStackTrace();
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre>
+<pre id="code51" class="unselectable codeClass">51			<a href='../Jf1i/Jf1i0.html' target='code'>System.out.print</a>( "치" );
+</pre>
+<pre id="code52" class="unselectable codeClass">52			<a href='../Cf1i/Cf1i0.html#2' target='code'>System.out.flush</a>();
+</pre>
+<pre id="code53" class="unselectable codeClass">53			try {
+</pre><pre id="code0" class="unselectable codeClass">				Thread.sleep(1000);
+</pre><pre id="code0" class="unselectable codeClass">			} catch (InterruptedException e) {
+</pre><pre id="code0" class="unselectable codeClass">				e.printStackTrace();
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre>
+<pre id="code54" class="unselectable codeClass">54			<a href='../Jf1i/Jf1i0.html' target='code'>System.out.print</a>( "네" );
+</pre>
+<pre id="code55" class="unselectable codeClass">55			<a href='../Cf1i/Cf1i0.html#2' target='code'>System.out.flush</a>();
+</pre><pre id="code0" class="unselectable codeClass">			 
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 프로그램 종료 </b></font>
+</pre>
+<pre id="code56" class="unselectable codeClass">56		}
+</pre><pre id="code0" class="unselectable codeClass">	}
+</pre></div>	 	 				<br><h4>실행 순서</h4> 				<pre id = "sP3d4" style='white-space:normal; width:800px;'> </pre> 				<pre style='white-space:normal;'> 					※ 실행순서 및 메모리상태는 A키(이전) 및 D키(다음)를 눌러도 확인할 수 있습니다  				</pre> 				<br><br><br><br><br><br><br><br> &nbsp;  			</div> 			<div id = "floatingBox" style = "top:120px;left:900px;margin:0px;padding:0px;"> 				<pre id = "outputBox" class ="outputBox" style = "color:White;height:215px;width:284px;padding:10px;margin:0px;"></pre>  				<div id = "intermediateResult"> 					<img id = "sP3d7"> 					<table style = "border-spacing:0px;margin:0px;table-layout:auto;"> 						<tbody id = "sP3d8"></tbody> 					</table> 				</div> 			</div> 		</div> 	</body> </html> 
